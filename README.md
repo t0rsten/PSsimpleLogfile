@@ -93,8 +93,8 @@ DateTime            LogLevel Message
 ```
 
 ### Documentation
-[Write-sLog](1.0.0/docs/Read-sLog.md)<br>
-[Read-sLog](1.0.0/docs/Read-sLog.md)
+[Write-sLog](docs/Read-sLog.md)<br>
+[Read-sLog](docs/Read-sLog.md)
 
 ### Changelog
 

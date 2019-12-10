@@ -37,7 +37,7 @@ PARAMETERS
         Accept wildcard characters?  false
 
     -LogLevel <String>
-        Specifies the loglevel. Posible values are Info, Warning and Error. Default is Info
+        Specifies the loglevel. Posible values are 'Info', 'Warning' and 'Error'. Default value is 'Info'.
 
         Required?                    false
         Position?                    3
@@ -58,15 +58,11 @@ OUTPUTS
 NOTES
 
 
-        Version: 1.0.0
         Author: Torsten Demmich
-
-        --- ChangeLog ---
-        1.0.0 Initial Version
 
     -------------------------- EXAMPLE 1 --------------------------
 
-    PS C:\>Write-sLog -Path C:\temp\logfile.log -Message 'Test' -LogLevel Error
+    PS C:\>Write-sLog -Path .\logfile.log -Message 'Test' -LogLevel Error
 
     Create a record in the logfile.
 

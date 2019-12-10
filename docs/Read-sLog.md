@@ -20,8 +20,8 @@ SYNTAX
 
 
 DESCRIPTION
-    The Read-sLog cmdlet reads data from a specific log file. The log file should be written using the cmdlet
-    Write-sLog.
+    The Read-sLog cmdlet reads data from a specific logfile. The logfile should be written using the 'Write-sLog'
+    cmdlet.
 
 
 PARAMETERS
@@ -92,15 +92,11 @@ OUTPUTS
 NOTES
 
 
-        Version: 1.0.0
         Author: Torsten Demmich
-
-        --- ChangeLog ---
-        1.0.0 Initial Version
 
     -------------------------- EXAMPLE 1 --------------------------
 
-    PS C:\>Read-sLog -Path C:\Temp\logfile.log -LogLevel info,error
+    PS C:\>Read-sLog -Path .\logfile.log -LogLevel info,error
 
     Reads records with loglevel info and error.
 
@@ -109,7 +105,7 @@ NOTES
 
     -------------------------- EXAMPLE 2 --------------------------
 
-    PS C:\>Read-sLog -Path C:\Temp\logfile.log -OnlyError
+    PS C:\>Read-sLog -Path .\logfile.log -OnlyError
 
     Reads records with loglevel error.
 
@@ -118,7 +114,7 @@ NOTES
 
     -------------------------- EXAMPLE 3 --------------------------
 
-    PS C:\>Read-sLog -Path C:\Temp\logfile.log
+    PS C:\>Read-sLog -Path .\logfile.log
 
     Reads all records.
 
