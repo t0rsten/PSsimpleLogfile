@@ -1,16 +1,16 @@
-function Read-sLog(){
+﻿function Read-sLog(){
   <#
   .SYNOPSIS
     Reads data from a logfile.
-  
+
   .DESCRIPTION
     The Read-sLog cmdlet reads data from a specific log file. The log file should be written using the cmdlet Write-sLog.
-  
+
   .PARAMETER Path
     Specifies the path to the logfile.
 
   .PARAMETER LogLevel
-    Specifies the loglevel to read. 
+    Specifies the loglevel to read.
 
   .PARAMETER OnlyError
     Reads only records with loglevel Error.
@@ -23,7 +23,7 @@ function Read-sLog(){
 
   .PARAMETER All
     Reads all records.
-  
+
   .EXAMPLE
     Read-sLog -Path C:\Temp\logfile.log -LogLevel info,error
     Reads records with loglevel info and error.
@@ -35,7 +35,7 @@ function Read-sLog(){
   .EXAMPLE
    Read-sLog -Path C:\Temp\logfile.log
    Reads all records.
-  
+
   .NOTES
     Version: 1.0.0
     Author: Torsten Demmich
@@ -77,7 +77,7 @@ function Read-sLog(){
 
     [Parameter(ParameterSetName = 'Default', Mandatory=$false, HelpMessage='Specify')]
     [Switch]$All
-  
+
     )
 
     begin{
@@ -101,9 +101,9 @@ function Read-sLog(){
       }
 
     }
-    
+
     end{
       return $Result
     }
-    
+
   }

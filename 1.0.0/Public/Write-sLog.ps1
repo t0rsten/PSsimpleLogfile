@@ -1,12 +1,12 @@
-function Write-sLog(){
+﻿function Write-sLog(){
   <#
   .SYNOPSIS
     Write a record
-  
+
   .DESCRIPTION
   The Write-sLog cmdLet write a new record to a logfile.
   If the logfile does not exist, it will be created automatically.
-  
+
   .PARAMETER Path
     Specifies the path to the logfile.
 
@@ -15,11 +15,11 @@ function Write-sLog(){
 
   .PARAMETER Message
     Specifies data associated with the record.
-  
+
   .EXAMPLE
     Write-sLog -Path C:\temp\logfile.log -Message 'Test' -LogLevel Error
     Create a record in the logfile.
-  
+
   .NOTES
     Version: 1.0.0
     Author: Torsten Demmich
@@ -29,7 +29,7 @@ function Write-sLog(){
 
   .LINK
     https://github.com/t0rsten/PSsimpleLogfile
-    
+
   #>
   [CmdletBinding()]
   Param(
@@ -54,9 +54,9 @@ function Write-sLog(){
     [ValidateNotNullOrEmpty()]
     [ValidateSet('Info','Warning','Error')]
     [string]$LogLevel = 'Info'
-  
+
     )
-    
+
     begin{}
 
     process{
@@ -64,5 +64,5 @@ function Write-sLog(){
     }
 
     end{}
-    
+
   }
