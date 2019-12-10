@@ -4,7 +4,7 @@
     Reads data from a logfile.
 
   .DESCRIPTION
-    The Read-sLog cmdlet reads data from a specific log file. The log file should be written using the cmdlet Write-sLog.
+    The Read-sLog cmdlet reads data from a specific logfile. The logfile should be written using the 'Write-sLog' cmdlet.
 
   .PARAMETER Path
     Specifies the path to the logfile.
@@ -25,23 +25,19 @@
     Reads all records.
 
   .EXAMPLE
-    Read-sLog -Path C:\Temp\logfile.log -LogLevel info,error
+    Read-sLog -Path .\logfile.log -LogLevel info,error
     Reads records with loglevel info and error.
 
   .EXAMPLE
-    Read-sLog -Path C:\Temp\logfile.log -OnlyError
+    Read-sLog -Path .\logfile.log -OnlyError
     Reads records with loglevel error.
 
   .EXAMPLE
-   Read-sLog -Path C:\Temp\logfile.log
-   Reads all records.
+    Read-sLog -Path .\logfile.log
+    Reads all records.
 
   .NOTES
-    Version: 1.0.0
     Author: Torsten Demmich
-
-    --- ChangeLog ---
-    1.0.0 Initial Version
 
   .LINK
     https://github.com/t0rsten/PSsimpleLogfile
