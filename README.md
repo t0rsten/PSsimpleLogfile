@@ -98,8 +98,9 @@ DateTime            LogLevel Message
 
 ### Changelog
 
-- 1.0.0 - Initial Version
-- 1.0.1
+- Version 1.0.0
+  - Initial Version
+- Version 1.0.1
   - Read-sLog: update comment based help
   - Read-sLog: remove trailing withspaces
   - Write-sLog: update comment based help
