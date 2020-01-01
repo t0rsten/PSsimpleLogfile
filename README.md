@@ -11,7 +11,7 @@ A Powershell Module to write and read simple Logfiles.
 ### Table of Contents
 **[Functions](#functions)**<br>
 **[Installation](#installation)**<br>
-**[Examples](#examples)**<br>
+**[Examples](#examples-of-usage)**<br>
 **[Documentation](#documentation)**<br>
 **[Changelog](#changelog)**<br>
 
