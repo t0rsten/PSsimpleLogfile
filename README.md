@@ -104,7 +104,7 @@ DateTime            LogLevel Message
 #### Version 1.0.1
 - Updated ```Read-sLog``` comment based help
 - Removed trailing withspaces in ```Read-sLog```
-- - Updated ```Write-sLog``` comment based help
+- Updated ```Write-sLog``` comment based help
 - Removed trailing withspaces in ```Write-sLog```
 
 #### Version 1.0.0
