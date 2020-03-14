@@ -29,8 +29,7 @@
   #>
   [CmdletBinding()]
   Param(
-    [Parameter(Mandatory=$true,
-    HelpMessage='Specify the path')]
+    [Parameter(Mandatory=$true, HelpMessage='Specify the path')]
     [ValidateScript({
       If(Test-Path -Path(Split-Path $_ -Parent) -PathType Container){
         $true }
