@@ -18,10 +18,10 @@ A Powershell Module to write and read simple Logfiles.
 
 
 ### Functions
-| Name       | Description                                                                                                             |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Name       | Description                                                                                                                 |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Write-sLog | The Write-sLog cmdLet write a new record to a logfile.<br> If the logfile does not exist, it will be created automatically. |
-| Read-sLog  | The Read-sLog cmdLet read records from a logfile.                                                                       |
+| Read-sLog  | The Read-sLog cmdLet read records from a logfile.                                                                           |
 
 ### Installation
 Install from Powershell Gallery
