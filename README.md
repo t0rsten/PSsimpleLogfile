@@ -94,12 +94,14 @@ DateTime            LogLevel Message
 ```
 
 ### Documentation
-[Write-sLog](docs/Read-sLog.md)<br>
+[Write-sLog](docs/Write-sLog.md)<br>
 [Read-sLog](docs/Read-sLog.md)
 
 ### Changelog
 #### Version 1.0.2
 - Removed help messages for some parameters in ```Read-sLog```
+- Updated ```docs/Read-sLog.md``` and ```docs/Write-sLog.md```
+- Updated ```README.md```
 
 #### Version 1.0.1
 - Updated ```Read-sLog``` comment based help
