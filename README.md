@@ -98,14 +98,16 @@ DateTime            LogLevel Message
 [Read-sLog](docs/Read-sLog.md)
 
 ### Changelog
+#### Version 1.0.2
+- Removed help messages for some parameters in ```Read-sLog```
 
-- Version 1.0.1
-  - Read-sLog: update comment based help
-  - Read-sLog: remove trailing withspaces
-  - Write-sLog: update comment based help
-  - Write-sLog: remove trailing withspaces
+#### Version 1.0.1
+- Updated ```Read-sLog``` comment based help
+- Removed trailing withspaces in ```Read-sLog```
+- - Updated ```Write-sLog``` comment based help
+- Removed trailing withspaces in ```Write-sLog```
 
-- Version 1.0.0
-  - Initial Version
+#### Version 1.0.0
+- Initial Version
 ---
 Made with :heart: and :coffee:
