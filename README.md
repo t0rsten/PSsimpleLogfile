@@ -18,10 +18,10 @@ A Powershell Module to write and read simple Logfiles.
 
 
 ### Functions
-| Name       | Description                                                                                                             |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Name       | Description                                                                                                                 |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Write-sLog | The Write-sLog cmdLet write a new record to a logfile.<br> If the logfile does not exist, it will be created automatically. |
-| Read-sLog  | The Read-sLog cmdLet read records from a logfile.                                                                       |
+| Read-sLog  | The Read-sLog cmdLet read records from a logfile.                                                                           |
 
 ### Installation
 Install from Powershell Gallery
@@ -94,18 +94,22 @@ DateTime            LogLevel Message
 ```
 
 ### Documentation
-[Write-sLog](docs/Read-sLog.md)<br>
+[Write-sLog](docs/Write-sLog.md)<br>
 [Read-sLog](docs/Read-sLog.md)
 
 ### Changelog
+#### Version 1.0.2
+- Removed help messages for some parameters in ```Read-sLog```
+- Updated ```docs/Read-sLog.md``` and ```docs/Write-sLog.md```
+- Updated ```README.md```
 
-- Version 1.0.1
-  - Read-sLog: update comment based help
-  - Read-sLog: remove trailing withspaces
-  - Write-sLog: update comment based help
-  - Write-sLog: remove trailing withspaces
+#### Version 1.0.1
+- Updated ```Read-sLog``` comment based help
+- Removed trailing withspaces in ```Read-sLog```
+- Updated ```Write-sLog``` comment based help
+- Removed trailing withspaces in ```Write-sLog```
 
-- Version 1.0.0
-  - Initial Version
+#### Version 1.0.0
+- Initial Version
 ---
 Made with :heart: and :coffee:

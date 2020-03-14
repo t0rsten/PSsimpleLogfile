@@ -59,19 +59,19 @@
     })]
     $Path,
 
-    [Parameter(ParameterSetName = 'LogLevel', Mandatory=$false, HelpMessage='Specify')]
+    [Parameter(ParameterSetName = 'LogLevel', Mandatory=$false)]
     [array]$LogLevel,
 
-    [Parameter(ParameterSetName = 'OnlyError', Mandatory=$false, HelpMessage='Specify')]
+    [Parameter(ParameterSetName = 'OnlyError', Mandatory=$false)]
     [Switch]$OnlyError,
 
-    [Parameter(ParameterSetName = 'OnlyWarning', Mandatory=$false, HelpMessage='Specify')]
+    [Parameter(ParameterSetName = 'OnlyWarning', Mandatory=$false)]
     [Switch]$OnlyWarning,
 
-    [Parameter(ParameterSetName = 'OnlyInfo', Mandatory=$false, HelpMessage='Specify')]
+    [Parameter(ParameterSetName = 'OnlyInfo', Mandatory=$false)]
     [Switch]$OnlyInfo,
 
-    [Parameter(ParameterSetName = 'Default', Mandatory=$false, HelpMessage='Specify')]
+    [Parameter(ParameterSetName = 'Default', Mandatory=$false)]
     [Switch]$All
 
     )
