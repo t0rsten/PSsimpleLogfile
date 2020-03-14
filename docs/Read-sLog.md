@@ -1,10 +1,3 @@
----
-external help file: PSsimpleLogfile-help.xml
-Module Name: pssimplelogfile
-online version: https://github.com/t0rsten/PSsimpleLogfile
-schema: 2.0.0
----
-
 # Read-sLog
 
 ## SYNOPSIS
