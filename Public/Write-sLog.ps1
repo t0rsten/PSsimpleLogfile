@@ -54,7 +54,7 @@
 
     begin{
       if (-not (Test-Path -Path $Path -PathType Leaf)){
-        New-Item -Name (Split-Path $Path -Leaf).ToString() -Path (Split-Path $Path -Parent).ToString() -ItemType File
+        [Void](New-Item -Name (Split-Path $Path -Leaf).ToString() -Path (Split-Path $Path -Parent).ToString() -ItemType File)
       }
     }
 
