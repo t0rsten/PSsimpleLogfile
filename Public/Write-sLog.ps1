@@ -52,7 +52,11 @@
 
     )
 
-    begin{}
+    begin{
+      if (-not (Test-Path -Path $Path -PathType Leaf)){
+        New-Item -Name (Split-Path $Path -Leaf).ToString() -Path (Split-Path $Path -Parent).ToString() -ItemType File
+      }
+    }
 
     process{
       Add-Content -Path $Path -Value ('{0};{1};{2}' -f (Get-Date -Format FileDateTime).ToString(), $LogLevel, $Message)
