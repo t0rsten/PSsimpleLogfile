@@ -3,9 +3,16 @@ $Public = @(Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 -ErrorAction Silently
 #$Private = @(Get-ChildItem -Path $PSScriptRoot\Private\*.ps1 -ErrorAction SilentlyContinue)
 
 # Load (dot sourcing) functions
-foreach ($import in @($Public + $Private)){
-  Try{ . $import.fullname }
-  Catch{ Write-Error -Message 'Failed to load function {0}: {1}' -f $import.fullname, $_}
+foreach ($import in @($Public))
+{
+  try
+  { 
+    . $import.fullname
+  }
+  catch
+  { 
+    Write-Error -Message 'Failed to load function {0}: {1}' -f $import.fullname, $_
+  }
 }
 
 Export-ModuleMember -Function $Public.Basename
