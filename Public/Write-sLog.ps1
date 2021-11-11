@@ -1,4 +1,5 @@
-﻿function Write-sLog(){
+﻿function Write-sLog()
+{
   <#
   .SYNOPSIS
     Write a record
@@ -16,6 +17,12 @@
   .PARAMETER Message
     Specifies data associated with the record.
 
+  .INPUTS
+    None
+
+  .OUTPUTS
+    System.String
+
   .EXAMPLE
     Write-sLog -Path .\logfile.log -Message 'Test' -LogLevel Error
     Create a record in the logfile.
@@ -31,9 +38,12 @@
   Param(
     [Parameter(Mandatory=$true, HelpMessage='Specify the path')]
     [ValidateScript({
-      If(Test-Path -Path(Split-Path $_ -Parent) -PathType Container){
-        $true }
-      else {
+      if(Test-Path -Path(Split-Path $_ -Parent) -PathType Container)
+      {
+        $true
+      }
+      else
+      {
         throw '{0} is not a valid Directory' -f (Split-Path $_ -Parent)
       }
     })]
@@ -52,13 +62,16 @@
 
     )
 
-    begin{
-      if (-not (Test-Path -Path $Path -PathType Leaf)){
+    begin
+    {
+      if (-not (Test-Path -Path $Path -PathType Leaf))
+      {
         [Void](New-Item -Name (Split-Path $Path -Leaf).ToString() -Path (Split-Path $Path -Parent).ToString() -ItemType File)
       }
     }
 
-    process{
+    process
+    {
       Add-Content -Path $Path -Value ('{0};{1};{2}' -f (Get-Date -Format FileDateTime).ToString(), $LogLevel, $Message)
     }
 
