@@ -1,4 +1,5 @@
-﻿function Read-sLog(){
+﻿function Read-sLog()
+{
   <#
   .SYNOPSIS
     Reads data from a logfile.
@@ -23,6 +24,12 @@
 
   .PARAMETER All
     Reads all records.
+
+  .INPUTS
+    None
+
+  .OUTPUTS
+    System.Management.Automation.PSCustomObject
 
   .EXAMPLE
     Read-sLog -Path .\logfile.log -LogLevel info,error
@@ -51,9 +58,12 @@
     [Parameter(ParameterSetName = 'OnlyWarning', Mandatory = $true, HelpMessage = 'Specify the path')]
     [Parameter(ParameterSetName = 'OnlyInfo', Mandatory = $true, HelpMessage = 'Specify the path')]
     [ValidateScript({
-      If(Test-Path -Path $_ -PathType Any){
-        $true }
-      else {
+      if(Test-Path -Path $_ -PathType Any)
+      {
+        $true
+      }
+      else
+      {
         throw '{0} path not found.' -f $_
       }
     })]
@@ -76,29 +86,35 @@
 
     )
 
-    begin{
+    begin
+    {
       Write-Verbose -Message ('Read logfile {0}' -f $Path)
       $LogFileHeader = 'DateTime','LogLevel','Message'
       $Data = Import-Csv -Delimiter ';' -Header $LogFileHeader -Path $Path
       Write-Verbose -Message ('Logfile with {0} Messages' -f $Data.Count)
     }
 
-    process{
-      if (-not $LogLevel){
+    process
+    {
+      if (-not $LogLevel)
+      {
         Switch ($PSBoundParameters.GetEnumerator().
         Where({$_.Value -eq $true}).Key){
           'OnlyError'   { $Result = $Data | Where-Object { $_.LogLevel -eq 'Error'} }
-          'OnlyWarning' { $Result = $Data | Where-Object { $_.LogLevel -eq 'Warning'}  }
+          'OnlyWarning' { $Result = $Data | Where-Object { $_.LogLevel -eq 'Warning'} }
           'OnlyInfo'    { $Result = $Data | Where-Object { $_.LogLevel -eq 'Info'} }
           Default       { $Result = $Data }
         }
-      } else {
+      }
+      else
+      {
         $Result = $Data | Where-Object { $_.LogLevel -in $LogLevel }
       }
 
     }
 
-    end{
+    end
+    {
       return $Result
     }
 
