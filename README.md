@@ -98,6 +98,10 @@ DateTime            LogLevel Message
 [Read-sLog](docs/Read-sLog.md)
 
 ### Changelog
+#### Version 1.0.4
+- code improvements
+- Updated ```Read-sLog``` comment based help
+- Updated ```Write-sLog``` comment based help
 #### Version 1.0.3
 - Fixed bug in ```Write-sLog``` that no file is created when using a PsDrive ([Issue #3](https://github.com/t0rsten/PSsimpleLogfile/issues/3))
 #### Version 1.0.2
