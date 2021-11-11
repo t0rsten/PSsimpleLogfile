@@ -1,3 +1,10 @@
+---
+external help file: PSsimpleLogfile-help.xml
+Module Name: PSsimpleLogfile
+online version: https://github.com/t0rsten/PSsimpleLogfile
+schema: 2.0.0
+---
+
 # Read-sLog
 
 ## SYNOPSIS
@@ -154,8 +161,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### None
 ## OUTPUTS
 
+### System.Management.Automation.PSCustomObject
 ## NOTES
 Author: Torsten Demmich
 

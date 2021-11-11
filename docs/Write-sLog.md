@@ -1,3 +1,10 @@
+---
+external help file: PSsimpleLogfile-help.xml
+Module Name: PSsimpleLogfile
+online version: https://github.com/t0rsten/PSsimpleLogfile
+schema: 2.0.0
+---
+
 # Write-sLog
 
 ## SYNOPSIS
@@ -76,8 +83,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### None
 ## OUTPUTS
 
+### System.String
 ## NOTES
 Author: Torsten Demmich
 
