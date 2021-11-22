@@ -5,7 +5,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest]
     env:
       OS: ${{ matrix.os }}
       PYTHON: '3.7'
@@ -13,10 +13,12 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
       with:
+        token: 049fd1bf-8492-4861-aa41-7b57fd3ae444
+        directory: ./
+        env_vars: OS,PYTHON
         fail_ci_if_error: true
         files: ./cov.xml
         flags: unittests
         name: codecov-umbrella
-        path_to_write_report: ./coverage/codecov_report.txt
+        path_to_write_report: ./codecov_report.txt
         verbose: true
-
