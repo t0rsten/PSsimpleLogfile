@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="2" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2021-11-22" time="16:40:53">
+  <environment clr-version="4.0.30319.42000" user-domain="GECITS-EU" cwd="C:\Scripts\onGitHub\currentlyInDevelopment\playground" platform="Microsoft Windows 10 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition3" machine-name="DE5CG0132NYJ" nunit-version="2.5.8.0" os-version="10.0.18363" user="TDEMMICH" />
+  <culture-info current-culture="de-DE" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="0.384" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Scripts\onGitHub\currentlyInDevelopment\playground\Pester.Tests.ps1" executed="True" result="Failure" success="False" time="0.384" asserts="0" description="C:\Scripts\onGitHub\currentlyInDevelopment\playground\Pester.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="PSsimpleLogfile Test" executed="True" result="Failure" success="False" time="0.2085" asserts="0" description="PSsimpleLogfile Test">
+            <results>
+              <test-suite type="TestFixture" name="PSsimpleLogfile Test.Logfile Creation" executed="True" result="Failure" success="False" time="0.1744" asserts="0" description="PSsimpleLogfile Test.Logfile Creation">
+                <results>
+                  <test-case description="File exists" name="PSsimpleLogfile Test.Logfile Creation.File exists" time="0.0488" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="File is not empty" name="PSsimpleLogfile Test.Logfile Creation.File is not empty" time="0.0698" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $content | Should -Not -BeNullOrEmpty, C:\Scripts\onGitHub\currentlyInDevelopment\playground\Pester.Tests.ps1:14
+at &lt;ScriptBlock&gt;, C:\Scripts\onGitHub\currentlyInDevelopment\playground\Pester.Tests.ps1:14</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
